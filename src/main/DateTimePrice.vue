@@ -34,18 +34,18 @@ export default {
 </script>
 <template>
     <div class="flex flex-col items-center mt-4">
-        <h1 class="text-white text-3xl">Date Crypto price</h1>
+        <h1 class="text-white text-3xl font-bold">Date Crypto price</h1>
 
-        <div class="bg-gradient-to-tr from-violet-400 to-violet-600 via-violet-500 rounded-md mt-5 p-0.5 w-3/5 lg:w-1/5 h-8">
-            <input v-model="dateTime" type="datetime-local" class="bg-neutral-700 text-white border-none outline-none w-full h-full rounded-md">
+        <div class="bg-gradient-to-tr bg-violet-gradient rounded-md mt-5 p-0.5 w-3/5 lg:w-1/5 h-8">
+            <input v-model="dateTime" type="datetime-local" class="bg-neutral-700 p-2 text-white border-none outline-none w-full h-full rounded-md">
         </div>
 
         <CoinSelect
             @changeCoin="changeCoin"
         ></CoinSelect>
 
-        <div class="bg-gradient-to-tl from-violet-400 to-violet-600 via-violet-500 rounded-md mt-5 p-0.5 w-3/5 lg:w-1/5 h-8">
-            <button class="text-white bg-neutral-700 w-full rounded-md text-lg" type="button" @click.prevent="search">Search</button>
+        <div class="bg-gradient-to-tl bg-violet-gradient rounded-md mt-5 p-0.5 w-3/5 lg:w-1/5 h-8">
+            <button class="text-white bg-neutral-700 hover:text-neutral-700 hover:bg-white duration-200 w-full rounded-md text-lg" type="button" @click.prevent="search">Search</button>
         </div>
 
         <CoinPrice

@@ -11,6 +11,7 @@
   "dependencies": {
     "axios": "^0.27.2",
     "sweetalert2": "^11.4.29",
+    "tailwindcss-animation-delay": "^1.0.7",
     "vue": "^3.2.37",
     "vue-sweetalert2": "^5.0.5"
   },

@@ -30,7 +30,7 @@ export default {
         v-if="coins">
         <div class="p-0.5">
             <select v-model="selectedCoin"
-                class="bg-neutral-700 text-white text-lg rounded-t-lg w-full focus:outline-none">
+                class="bg-neutral-700 px-1.5 text-white text-lg rounded-t-lg w-full focus:outline-none">
                 <option v-for="(coin, index) in coins" :key="index" :value="coin.id">{{ coin.name }}</option>
             </select>
         </div>

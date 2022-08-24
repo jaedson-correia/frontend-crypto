@@ -4,21 +4,34 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        flipV: 'flipV 1s linear .2s'
+        flipY: 'flipY 2.5s linear infinite',
+        bgAnim: 'bgAnim 5s linear infinite'
       },
       keyframes: {
-        flipV: {
+        flipY: {
           '50%': {
-            transform: 'rotateY(180deg)',
-            scale: 2
+            transform: 'rotateY(180deg)'
           },
           to: {
-            transform: 'rotateY(360deg)',
-            scale: 2
-          }
+            transform: 'rotateY(360deg)'
+          },
+        },
+        bgAnim: {
+          '5%': {
+            opacity: .4
+          },
+          '100%': {
+            transform: 'translateY(85vh) scale(.9, .9)',
+            opacity: 0,
+          },
         }
+      },
+      fontFamily: {
+        roboto: ['Roboto']
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require("tailwindcss-animation-delay"),
+  ]
 };

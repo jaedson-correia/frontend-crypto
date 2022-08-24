@@ -34,7 +34,7 @@ export default {
 </script>
 <template>
     <div class="flex flex-col items-center mt-4">
-        <h1 class="text-white text-3xl">Selected Crypto last price</h1>
+        <h1 class="text-white text-3xl font-bold">Selected Crypto last price</h1>
 
         <CoinSelect
             @changeCoin="changeCoin"

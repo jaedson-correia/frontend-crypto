@@ -29,6 +29,20 @@ export default {
             });
         }
     },
+    mounted() {
+        window.Echo.channel('new-price').listen('NewPrice', (e) => {
+            axios.get("http://127.0.0.1:8000/api/coin/" + this.selectedCoin + "/last-price", {
+                params: {
+                    'dateTime': this.dateTime
+                }
+            }).then(response => {
+                this.coin = response.data.coin
+                this.price = response.data.price
+            }).catch(error => {
+                this.$swal.fire("An error has occured!", error.response.data.message, "error");
+            });
+        })
+    },
     components: { CoinSelect, CoinPrice }
 }
 </script>

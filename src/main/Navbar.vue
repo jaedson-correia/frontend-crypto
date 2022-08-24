@@ -3,7 +3,7 @@
         <h1 class="text-white text-2xl">Crypto Pricing</h1>
         <div class="flex flex-row items-center">
             <h2 class="text-white">
-                <span class="hidden lg:inline">Powered By </span><a href="https://www.coingecko.com/">CoinGecko</a>
+                <span class="hidden lg:inline">Powered By </span><a target="_blank" href="https://www.coingecko.com/">CoinGecko</a>
             </h2>
             <img width="24" src="coingecko.svg" alt="Coin Gecko Logo" />
         </div>

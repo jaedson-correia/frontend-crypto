@@ -1,3 +1,8 @@
+## About the code
+
+To listen to server side broadcasting, I decided to go with the library laravel-echo.
+Also, there is a sweet alert give users a better experience, returning any errors that may occur, like too many requests.
+
 ## Local Installation
 Requirements:
 - npm

@@ -13,7 +13,7 @@ export default {
         }
     },
     mounted() {
-        axios.get('http://127.0.0.1:8000/api/coin/list').then(response => {
+        axios.get('https://api-cryptoj.herokuapp.com/api/coin/list').then(response => {
             this.coins = response.data.coins
             this.selectedCoin = this.coins[0].id
         }).catch(error => {

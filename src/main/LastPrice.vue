@@ -17,7 +17,7 @@ export default {
     },
     watch: {
         selectedCoin: function(newValue, oldValue) {
-            axios.get("http://127.0.0.1:8000/api/coin/" + this.selectedCoin + "/last-price", {
+            axios.get("https://api-cryptoj.herokuapp.com/api/coin/" + this.selectedCoin + "/last-price", {
                 params: {
                     'dateTime': this.dateTime
                 }
@@ -31,7 +31,7 @@ export default {
     },
     mounted() {
         window.Echo.channel('new-price').listen('NewPrice', (e) => {
-            axios.get("http://127.0.0.1:8000/api/coin/" + this.selectedCoin + "/last-price", {
+            axios.get("https://api-cryptoj.herokuapp.com/api/coin/" + this.selectedCoin + "/last-price", {
                 params: {
                     'dateTime': this.dateTime
                 }

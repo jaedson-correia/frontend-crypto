@@ -17,7 +17,7 @@ export default {
         },
 
         search() {
-            axios.get("http://127.0.0.1:8000/api/coin/" + this.selectedCoin + "/price-by-datetime", {
+            axios.get("https://api-cryptoj.herokuapp.com/api/coin/" + this.selectedCoin + "/price-by-datetime", {
                 params: {
                     'dateTime': this.dateTime
                 }
